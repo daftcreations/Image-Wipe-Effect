@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <link href="main.css" rel="stylesheet"/>
+        <script src="jquery-1.10.2.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#main").mousemove(function(){
+                   $val=event.clientX-185;
+                    if($val<=995 && $val>=0)
+                    {
+                        $("#separator").css("left",$val);
+                        $("#frame").css("width",1000-$val);
+                    }
+                }); 
+            });
+        </script>
+    </head>
+    <body>
+        <div id="main">
+            <div id="separator"></div>
+            <div id="frame"></div>
+        </div>
+    </body>
+</html>

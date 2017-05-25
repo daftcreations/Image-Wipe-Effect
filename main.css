@@ -1,0 +1,46 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #faee98;
+}
+#main{
+    height: 500px;
+    width: 1000px;
+    background-color:#faee98;
+    border: 5px solid black;
+    border-radius: 5px;
+    background-image: url('courage2.png');
+    background-size: 15% 35%;
+    background-repeat: no-repeat;
+    background-position: 95% 110%;
+    background-attachment: fixed;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+#frame{
+    height: 500px;
+    width: 1000px;
+    background-color: #aa88df;
+    background-image: url('courage.png');
+    background-size: 15% 35%;
+    background-repeat: no-repeat;
+    background-position: 95% 110%;
+    background-attachment: fixed;
+    position: absolute;
+    right: 0;
+}
+#separator{
+    height: 500px;
+    width: 5px;
+    background-color: black;
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    z-index: 9999;
+}
+#separator:hover{
+    cursor: e-resize;
+}
+
